@@ -6,6 +6,11 @@
   --font-body: "Ysabeau SC", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 120px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -22,8 +27,8 @@ body {
 
 .site-moon-bg {
   position: fixed;
-  top: -40px;
-  left: -50px;
+  top: 0px;
+  left: -30px;
   width: 400px;
   height: auto;
   opacity: 0.5;
