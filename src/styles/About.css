@@ -24,7 +24,7 @@
   margin-bottom: 0.5rem;
 }
 
-.features-grid {
+.about-features-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 3rem;
@@ -62,7 +62,6 @@
   animation-delay: 4s;
 }
 
-/* Orbital ring effect */
 .feature-card::before {
   content: "";
   position: absolute;
@@ -79,7 +78,6 @@
   transition: opacity 0.5s ease;
 }
 
-/* Second orbital ring */
 .feature-card::after {
   content: "";
   position: absolute;
@@ -135,7 +133,6 @@
   line-height: 1.5;
 }
 
-/* Floating animation */
 @keyframes floating {
   0%,
   100% {
@@ -146,7 +143,6 @@
   }
 }
 
-/* Orbital ring rotation */
 @keyframes rotate {
   from {
     transform: rotate(0deg);
@@ -157,7 +153,7 @@
 }
 
 @media (max-width: 1024px) {
-  .features-grid {
+  .about-features-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
   }
@@ -172,7 +168,7 @@
     font-size: 2.5rem;
   }
 
-  .features-grid {
+  .about-features-grid {
     grid-template-columns: 1fr;
     gap: 2rem;
   }

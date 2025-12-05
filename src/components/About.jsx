@@ -27,7 +27,7 @@ function About() {
       <div className="about-container">
         <div className="about-title">About</div>
 
-        <div className="features-grid">
+        <div className="about-features-grid">
           {features.map((feature) => (
             <div key={feature.number} className="feature-card">
               <div className="feature-number">{feature.number}</div>
