@@ -1,0 +1,15 @@
+:root {
+  --white: white;
+  --black: black;
+  --gray: #888888;
+  --blue: #646cff;
+  --yellow: #ffbd2e;
+  --red: #ff5f56;
+  --green: #27c93f;
+  --dark-blue: #131820;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+  }
+}
