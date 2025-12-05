@@ -34,7 +34,7 @@ function Header() {
           <a href="#team" className="nav-link">{language === "en" ? "Team" : "팀"}</a>
           <a href="#contact" className="nav-link">{language === "en" ? "Contact" : "연락처"}</a>
 
-          <button className="language-toggle" onClick={toggleLanguage}>
+          <button className="language-toggle" onClick={toggleLanguage} disabled>
             <img src={LanguageIcon} alt="Language Toggle" />
           </button>
         </nav>

@@ -5,6 +5,7 @@ import About from "./components/About";
 import Project from "./components/Project";
 import Team from "./components/Team";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 import "./styles/global.css";
 import MoonIcon from "./assets/imgs/moon.svg";
 
@@ -55,6 +56,8 @@ function App() {
       <About />
       <Project />
       <Team />
+      <Contact />
+      <Footer />
     </>
   );
 }
