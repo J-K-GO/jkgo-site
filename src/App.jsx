@@ -52,6 +52,7 @@ function App() {
       <img src={MoonIcon} alt="Moon" className="site-moon-bg" />
       <Header />
       <Hero />
+      <About />
     </>
   );
 }
