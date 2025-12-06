@@ -194,6 +194,8 @@
   text-decoration: none;
   cursor: pointer;
   pointer-events: auto;
+  animation: counter-rotate 20s linear infinite;
+  animation-delay: var(--delay);
 }
 
 @keyframes counter-rotate {
