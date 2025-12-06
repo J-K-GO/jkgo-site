@@ -4,6 +4,7 @@
   --font-display: "Zen Tokyo Zoo", cursive;
   --font-code: "Nanum Gothic Coding", monospace;
   --font-body: "Ysabeau SC", sans-serif;
+  --font-korean: "SUITE", sans-serif;
 }
 
 html {
@@ -24,6 +25,10 @@ body {
   color: white;
   position: relative;
   overflow-x: hidden;
+}
+
+.font-kr {
+  font-family: var(--font-korean) !important;
 }
 
 .site-moon-bg {

@@ -10,8 +10,10 @@ import MailIcon from "../assets/icons/mail-icon.svg";
 import GithubIcon from "../assets/icons/github-icon.svg";
 import LinkedinIcon from "../assets/icons/linkedin-icon.svg";
 import LogoIcon from "../assets/icons/jkgo-icon.svg";
+import { useLanguage } from "../contexts/LanguageContext";
 
 function Team() {
+  const { language } = useLanguage();
   const [flippedCards, setFlippedCards] = useState({});
 
   const teamMembers = [
@@ -120,9 +122,18 @@ function Team() {
               >
                 <div className="team-card-front">
                   <div className="card-info">
-                    <div className="card-names">
-                      <div className="card-name-ko">{member.name}</div>
-                      <div className="card-name-en">{member.nameEn}</div>
+                    <div className={`card-names ${language === "en" ? "lang-en" : "lang-kr"}`}>
+                      {language === "kr" ? (
+                        <>
+                          <div className="card-name-primary">{member.name}</div>
+                          <div className="card-name-secondary">{member.nameEn}</div>
+                        </>
+                      ) : (
+                        <>
+                          <div className="card-name-primary">{member.nameEn}</div>
+                          <div className="card-name-secondary">{member.name}</div>
+                        </>
+                      )}
                     </div>
                     <div className="card-role">
                       {member.role.includes("PM") ? "The PM" : "The PA"} of{" "}

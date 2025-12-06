@@ -105,6 +105,12 @@
   cursor: pointer;
   transition: all 0.3s ease;
   color: white;
+  opacity: 0.8;
+}
+
+.language-toggle:hover {
+  opacity: 1;
+  transform: scale(1.1);
 }
 
 .language-toggle:disabled {
@@ -112,7 +118,7 @@
   cursor: not-allowed;
 }
 
-.language-toggle svg {
+.language-toggle img {
   width: 24px;
   height: 24px;
 }

@@ -1,14 +1,10 @@
-import { useState } from "react";
 import "../styles/Header.css";
+import { useLanguage } from "../contexts/LanguageContext";
 import LanguageIcon from "../assets/icons/language-icon.svg";
 import LogoIcon from "../assets/icons/jkgo-icon.svg";
 
 function Header() {
-  const [language, setLanguage] = useState("en");
-
-  const toggleLanguage = () => {
-    setLanguage((prevLang) => (prevLang === "en" ? "kr" : "en"));
-  };
+  const { toggleLanguage } = useLanguage();
 
   return (
     <header className="header">
@@ -29,12 +25,12 @@ function Header() {
         </a>
 
         <nav className="nav">
-          <a href="#about" className="nav-link">{language === "en" ? "About" : "소개"}</a>
-          <a href="#projects" className="nav-link">{language === "en" ? "Projects" : "프로젝트"}</a>
-          <a href="#team" className="nav-link">{language === "en" ? "Team" : "팀"}</a>
-          <a href="#contact" className="nav-link">{language === "en" ? "Contact" : "연락처"}</a>
+          <a href="#about" className="nav-link">About</a>
+          <a href="#project" className="nav-link">Project</a>
+          <a href="#team" className="nav-link">Team</a>
+          <a href="#contact" className="nav-link">Contact</a>
 
-          <button className="language-toggle" onClick={toggleLanguage} disabled>
+          <button className="language-toggle" onClick={toggleLanguage}>
             <img src={LanguageIcon} alt="Language Toggle" />
           </button>
         </nav>

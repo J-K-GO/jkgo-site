@@ -7,7 +7,7 @@ import CopyrightIcon from "../assets/icons/copyright-icon.svg";
 function Footer() {
   const navLinks = [
     { name: "About", href: "#about" },
-    { name: "Projects", href: "#projects" },
+    { name: "Project", href: "#project" },
     { name: "Team", href: "#team" },
     { name: "Contact", href: "#contact" },
   ];
