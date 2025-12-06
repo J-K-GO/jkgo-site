@@ -54,9 +54,15 @@ function Project() {
     <section id="projects" className="project">
       <div className="project-container">
         <div className="project-header">
-          <div className="project-title">Project</div>
+          <div className="project-title" data-aos="fade-down">
+            Project
+          </div>
 
-          <div className="project-description-panel">
+          <div
+            className="project-description-panel"
+            data-aos="fade-right"
+            data-aos-delay="100"
+          >
             <div className="panel-label">JKDBG-Plugin</div>
             <p className="project-description">
               VM debugging toolkit with three QEMU plugins and Qt GUI for live
@@ -66,10 +72,17 @@ function Project() {
         </div>
 
         <div className="features-section">
-          <div className="section-label">6 Core Features</div>
+          <div className="section-label" data-aos="fade-up">
+            6 Core Features
+          </div>
           <div className="project-features-grid">
-            {coreFeatures.map((feature) => (
-              <div key={feature.number} className="feature-module">
+            {coreFeatures.map((feature, index) => (
+              <div
+                key={feature.number}
+                className="feature-module"
+                data-aos="zoom-in"
+                data-aos-delay={index * 100}
+              >
                 <div className="module-number">{feature.number}</div>
                 <div className="module-title">{feature.title}</div>
                 <p className="module-description">{feature.description}</p>
@@ -79,7 +92,7 @@ function Project() {
         </div>
 
         <div className="project-footer">
-          <div className="keywords-section">
+          <div className="keywords-section" data-aos="fade-up">
             <div className="keywords-label">Keywords</div>
             <div className="keywords-list">
               {keywords.map((keyword, index) => (
@@ -90,7 +103,11 @@ function Project() {
             </div>
           </div>
 
-          <div className="project-links">
+          <div
+            className="project-links"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
             <a
               href="https://github.com/J-K-GO"
               target="_blank"

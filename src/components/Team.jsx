@@ -82,7 +82,9 @@ function Team() {
   return (
     <section id="team" className="team">
       <div className="team-container">
-        <div className="team-title">Team</div>
+        <div className="team-title" data-aos="fade-down">
+          Team
+        </div>
 
         <Swiper
           effect="coverflow"
@@ -105,6 +107,8 @@ function Team() {
           }}
           modules={[EffectCoverflow, Navigation, Autoplay]}
           className="team-swiper"
+          data-aos="zoom-in-up"
+          data-aos-delay="100"
         >
           {teamMembers.map((member) => (
             <SwiperSlide key={member.id} className="team-slide">

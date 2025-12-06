@@ -31,9 +31,11 @@ function Contact() {
   return (
     <section id="contact" className="contact">
       <div className="contact-container">
-        <div className="contact-title">Contact</div>
+        <div className="contact-title" data-aos="fade-down">
+          Contact
+        </div>
 
-        <div className="satellite-system">
+        <div className="satellite-system" data-aos="zoom-in" data-aos-delay="100">
           <div className="transmitter">
             <div className="transmitter-core">
               <div className="signal-pulse"></div>
@@ -76,7 +78,11 @@ function Contact() {
           ))}
         </div>
 
-        <div className="contact-status">
+        <div
+          className="contact-status"
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
           <span className="status-dot"></span>
           All systems operational - Ready for transmission
         </div>

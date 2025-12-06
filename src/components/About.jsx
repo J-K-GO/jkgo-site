@@ -25,11 +25,18 @@ function About() {
   return (
     <section id="about" className="about">
       <div className="about-container">
-        <div className="about-title">About</div>
+        <div className="about-title" data-aos="fade-down">
+          About
+        </div>
 
         <div className="about-features-grid">
-          {features.map((feature) => (
-            <div key={feature.number} className="feature-card">
+          {features.map((feature, index) => (
+            <div
+              key={feature.number}
+              className="feature-card"
+              data-aos="fade-up"
+              data-aos-delay={index * 150}
+            >
               <div className="feature-number">{feature.number}</div>
               <div className="feature-title">{feature.title}</div>
               <p className="feature-description">{feature.description}</p>

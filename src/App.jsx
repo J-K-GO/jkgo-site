@@ -1,6 +1,9 @@
 import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
+import Terminal from "./components/Terminal";
 import About from "./components/About";
 import Project from "./components/Project";
 import Team from "./components/Team";
@@ -11,6 +14,14 @@ import MoonIcon from "./assets/imgs/moon.svg";
 
 function App() {
   useEffect(() => {
+    // Initialize AOS
+    AOS.init({
+      duration: 1000,
+      once: true,
+      offset: 100,
+      easing: "ease-out-cubic",
+    });
+
     const starsContainer = document.createElement("div");
     starsContainer.className = "stars";
     document.body.prepend(starsContainer);
@@ -53,6 +64,7 @@ function App() {
       <img src={MoonIcon} alt="Moon" className="site-moon-bg" />
       <Header />
       <Hero />
+      <Terminal />
       <About />
       <Project />
       <Team />
