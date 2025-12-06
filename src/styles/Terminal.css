@@ -232,17 +232,118 @@
 }
 
 /* Responsive */
+@media (max-width: 1024px) {
+  .terminal-container {
+    padding: 0 2rem;
+  }
+}
+
 @media (max-width: 768px) {
   .terminal-section {
-    padding: 40px 0;
-  }
-
-  .terminal-body {
-    padding: 16px;
-    font-size: 13px;
+    padding: 1.5rem 1rem;
   }
 
   .terminal-container {
-    width: 95%;
+    padding: 0 1rem;
+  }
+
+  .terminal-window {
+    border-radius: 10px;
+    min-height: 200px;
+  }
+
+  .terminal-header {
+    padding: 10px 14px;
+  }
+
+  .terminal-button {
+    width: 10px;
+    height: 10px;
+  }
+
+  .terminal-body {
+    padding: 18px;
+    font-size: 13px;
+    min-height: 150px;
+  }
+
+  .terminal-prompt {
+    font-size: 16px;
+  }
+
+  .scroll-indicator {
+    margin-top: 2rem;
+    gap: 0.8rem;
+  }
+
+  .scroll-text {
+    font-size: 0.75rem;
+  }
+
+  .scroll-arrow {
+    width: 25px;
+    height: 25px;
+    border-left: 2px solid rgba(148, 163, 184, 0.8);
+    border-bottom: 2px solid rgba(148, 163, 184, 0.8);
+  }
+}
+
+@media (max-width: 480px) {
+  .terminal-section {
+    padding: 1rem 0.5rem;
+  }
+
+  .terminal-container {
+    padding: 0 0.5rem;
+  }
+
+  .terminal-window {
+    border-radius: 8px;
+    min-height: 180px;
+  }
+
+  .terminal-header {
+    padding: 8px 12px;
+  }
+
+  .terminal-button {
+    width: 8px;
+    height: 8px;
+  }
+
+  .terminal-buttons {
+    gap: 6px;
+  }
+
+  .terminal-body {
+    padding: 14px;
+    font-size: 11px;
+    min-height: 130px;
+    line-height: 1.6;
+  }
+
+  .terminal-prompt {
+    font-size: 14px;
+    margin-right: 6px;
+  }
+
+  .terminal-check {
+    font-size: 14px;
+    margin-right: 6px;
+  }
+
+  .scroll-indicator {
+    margin-top: 1.5rem;
+    gap: 0.6rem;
+  }
+
+  .scroll-text {
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+  }
+
+  .scroll-arrow {
+    width: 20px;
+    height: 20px;
   }
 }

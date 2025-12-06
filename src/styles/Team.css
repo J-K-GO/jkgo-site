@@ -1,7 +1,7 @@
 .team {
   display: flex;
   justify-content: center;
-  padding: 2rem;
+  padding: 2rem 2rem 3rem;
   position: relative;
 }
 
@@ -223,39 +223,135 @@
   display: none !important;
 }
 
+@media (max-width: 1024px) {
+  .team-container {
+    padding: 0 2rem;
+  }
+}
+
 @media (max-width: 768px) {
+  .team {
+    padding: 1.5rem 1rem 2rem;
+  }
+
+  .team-container {
+    padding: 0 1.5rem;
+  }
+
   .team-title {
     font-size: 2.5rem;
   }
 
   .team-slide {
-    width: 90vw;
-    max-width: 400px;
-    height: 500px;
+    width: 85vw;
+    max-width: 420px;
+    height: 350px;
+  }
+
+  .team-swiper {
+    padding: 2rem 1rem;
   }
 
   .team-card-front {
     flex-direction: column;
+    padding: 2.5rem;
+    justify-content: center;
   }
 
   .card-image {
-    width: 100%;
-    height: 200px;
+    display: none;
   }
 
   .card-info {
-    padding: 1.5rem;
+    padding: 0;
   }
 
   .card-name-primary {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+  }
+
+  .card-name-secondary {
+    font-size: 1.4rem;
+  }
+
+  .card-names.lang-en .card-name-primary {
+    font-size: 1.6rem;
+  }
+
+  .card-names.lang-en .card-name-secondary {
+    font-size: 1rem;
+  }
+
+  .card-role {
+    font-size: 1.15rem;
+  }
+
+  .contact-item {
+    font-size: 0.95rem;
   }
 
   .team-logo-text {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
   .team-logo-subtitle {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .team {
+    padding: 1rem 0.5rem 1.5rem;
+  }
+
+  .team-container {
+    padding: 0 1rem;
+  }
+
+  .team-slide {
+    width: 85vw;
+    max-width: 370px;
+    height: 320px;
+  }
+
+  .team-swiper {
+    padding: 2rem 1rem;
+  }
+
+  .team-card-front {
+    padding: 2rem;
+  }
+
+  .card-name-primary {
+    font-size: 1.6rem;
+  }
+
+  .card-name-secondary {
     font-size: 1.2rem;
+  }
+
+  .card-names.lang-en .card-name-primary {
+    font-size: 1.4rem;
+  }
+
+  .card-names.lang-en .card-name-secondary {
+    font-size: 1.2rem;
+  }
+
+  .card-role {
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .contact-item {
+    font-size: 0.85rem;
+  }
+
+  .team-logo-text {
+    font-size: 2rem;
+  }
+
+  .team-logo-subtitle {
+    font-size: 0.9rem;
   }
 }
