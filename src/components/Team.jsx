@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCoverflow, Navigation } from "swiper/modules";
+import { EffectCoverflow, Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/navigation";
@@ -89,6 +89,7 @@ function Team() {
           grabCursor={true}
           centeredSlides={true}
           slidesPerView="auto"
+          speed={800}
           coverflowEffect={{
             rotate: 50,
             stretch: 0,
@@ -97,7 +98,12 @@ function Team() {
             slideShadows: false,
           }}
           navigation={true}
-          modules={[EffectCoverflow, Navigation]}
+          autoplay={{
+            delay: 2000,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+          }}
+          modules={[EffectCoverflow, Navigation, Autoplay]}
           className="team-swiper"
         >
           {teamMembers.map((member) => (
@@ -108,7 +114,6 @@ function Team() {
                 }`}
                 onClick={() => toggleFlip(member.id)}
               >
-                {/* Front */}
                 <div className="team-card-front">
                   <div className="card-info">
                     <div className="card-names">
@@ -159,7 +164,6 @@ function Team() {
                   </div>
                 </div>
 
-                {/* Back */}
                 <div className="team-card-back">
                   <img src={LogoIcon} alt="J.K.GO Logo" className="back-logo" />
                   <div className="team-logo-container">
