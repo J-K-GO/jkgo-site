@@ -13,15 +13,15 @@ function About() {
         },
         {
           number: "02",
-          title: "공유 메모리 IPC",
+          title: "인터럽트 동기화",
           description:
-            "POSIX 공유 메모리를 사용한 락 프리 실시간 메모리 덤프로 거의 제로 오버헤드 달성",
+            "스냅샷과 CPU 클럭에 맞추어 인터럽트를 기록하고 16KB 단위로 TB 실행 후 인터럽트를 동기화",
         },
         {
           number: "03",
           title: "타임 트래블 디버깅",
           description:
-            "최대 100개의 VM 상태를 타임라인으로 탐색할 수 있는 스냅샷 기반 시간 여행 디버깅",
+            "스냅샷 기반 타임라인을 통해 MTTCG 환경에서 원하는 시점으로 자유롭게 이동",
         },
       ]
     : [
@@ -33,15 +33,15 @@ function About() {
         },
         {
           number: "02",
-          title: "Shared Memory IPC",
+          title: "Interrupt Synchronization",
           description:
-            "Lock-free real-time memory dumps using POSIX shared memory with near-zero overhead.",
+            "Records interrupts aligned with snapshots and CPU clock, and synchronizes interrupts after each 16KB translation block execution.",
         },
         {
           number: "03",
           title: "Time-Travel Debugging",
           description:
-            "Snapshot-based temporal debugging with timeline navigation for up to 100 VM states.",
+            "Freely navigate to any point in time within an MTTCG environment through a snapshot-based timeline.",
         },
       ];
 

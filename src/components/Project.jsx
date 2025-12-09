@@ -8,9 +8,9 @@ function Project() {
     en: [
       {
         number: "01",
-        title: "Real-time Physical Memory Dump",
+        title: "Real-Time CPU Register Debugging",
         description:
-          "Dumps guest memory to shared memory with lock-free synchronization.",
+          "Provides real-time visibility into CPU registers to support low-level hardware debugging.",
       },
       {
         number: "02",
@@ -28,7 +28,7 @@ function Project() {
         number: "04",
         title: "Snapshot Timeline",
         description:
-          "Up to 100 VM snapshots with 10ms intervals and instant restoration.",
+          "Currently under research to provide a debugging environment that records IRQs at each CPU clock and synchronizes them with VM snapshots for precise time navigation.",
       },
       {
         number: "05",
@@ -44,9 +44,9 @@ function Project() {
     kr: [
       {
         number: "01",
-        title: "실시간 물리 메모리 덤프",
+        title: "실시간 CPU 레지스터 디버깅",
         description:
-          "락 프리 동기화로 게스트 메모리를 공유 메모리에 덤프합니다.",
+          "CPU 레지스터를 실시간으로 볼 수 있도록 하여 하드웨어 디버깅을 돕습니다.",
       },
       {
         number: "02",
@@ -64,7 +64,7 @@ function Project() {
         number: "04",
         title: "스냅샷 타임라인",
         description:
-          "10ms 간격으로 최대 100개의 VM 스냅샷과 즉시 복원 기능을 제공합니다.",
+          "IRQ를 CPU 클럭마다 기록하여 VM 스냅샷과 동기화를 통해 원하는 시점으로 이동할 수 있는 디버깅 환경을 제공하기 위해 연구 중입니다.",
       },
       {
         number: "05",
