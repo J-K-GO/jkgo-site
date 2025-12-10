@@ -72,6 +72,17 @@ function Team() {
       linkedin: "linkedin.com/in/irenesubin",
       image: "/team/subin.svg",
     },
+    {
+      id: 6,
+      name: "이수현",
+      nameEn: "LEE SUHYEON",
+      role: "The PA of J.K.GO",
+      phone: "010-4547-8864",
+      email: "shsh010914@jkgo.kr",
+      github: "swuhyeon",
+      linkedin: "linkedin.com/in/swuhyeon",
+      image: "/team/suhyeon.svg",
+    },
   ];
 
   const toggleFlip = (id) => {
@@ -122,16 +133,26 @@ function Team() {
               >
                 <div className="team-card-front">
                   <div className="card-info">
-                    <div className={`card-names ${language === "en" ? "lang-en" : "lang-kr"}`}>
+                    <div
+                      className={`card-names ${
+                        language === "en" ? "lang-en" : "lang-kr"
+                      }`}
+                    >
                       {language === "kr" ? (
                         <>
                           <div className="card-name-primary">{member.name}</div>
-                          <div className="card-name-secondary">{member.nameEn}</div>
+                          <div className="card-name-secondary">
+                            {member.nameEn}
+                          </div>
                         </>
                       ) : (
                         <>
-                          <div className="card-name-primary">{member.nameEn}</div>
-                          <div className="card-name-secondary">{member.name}</div>
+                          <div className="card-name-primary">
+                            {member.nameEn}
+                          </div>
+                          <div className="card-name-secondary">
+                            {member.name}
+                          </div>
                         </>
                       )}
                     </div>

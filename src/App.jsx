@@ -5,6 +5,7 @@ import { LanguageProvider } from "./contexts/LanguageContext";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Terminal from "./components/Terminal";
+import MediaShowcase from "./components/MediaShowcase";
 import About from "./components/About";
 import Project from "./components/Project";
 import Team from "./components/Team";
@@ -65,6 +66,7 @@ function App() {
       <Header />
       <Hero />
       <Terminal />
+      <MediaShowcase />
       <About />
       <Project />
       <Team />
